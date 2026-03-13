@@ -1,11 +1,9 @@
-/* Reset */
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
 }
 
-/* Body */
 body{
 background:#ffffff;
 font-family:'Yantramanav', sans-serif;
@@ -13,59 +11,51 @@ color:#111;
 overflow-x:hidden;
 }
 
-/* Main container */
+.first{
+width:100%;
+display:flex;
+justify-content:center;
+}
+
 .content{
 max-width:1200px;
-margin:auto;
+width:100%;
 padding:20px;
 }
 
-/* Title */
 h1{
-font-size:42px;
+font-size:48px;
 font-weight:900;
 color:#b297be;
 text-align:center;
 margin-top:40px;
 }
 
-/* Navigation */
-.nav{
+p{
+font-size:18px;
+line-height:1.6;
+}
+
+nav{
 display:flex;
 justify-content:center;
 gap:40px;
-margin-top:20px;
+margin:30px 0;
 font-size:20px;
+font-weight:700;
 }
 
-.nav a{
-text-decoration:none;
+nav a{
 color:#000;
-font-weight:700;
+text-decoration:none;
 transition:0.2s;
 }
 
-.nav a:hover{
+nav a:hover{
 color:#a82b22;
 transform:scale(1.05);
 }
 
-/* Section text */
-p{
-line-height:1.6;
-font-size:18px;
-margin-top:10px;
-}
-
-/* Divider */
-hr{
-border:none;
-height:2px;
-background:#ddd;
-margin:40px 0;
-}
-
-/* Feature list */
 ul{
 margin-top:20px;
 padding-left:20px;
@@ -75,21 +65,26 @@ ul li{
 margin-bottom:10px;
 }
 
-/* Images */
 img{
 max-width:100%;
 height:auto;
 }
 
-/* Buttons */
+hr{
+border:none;
+height:2px;
+background:#ddd;
+margin:40px 0;
+}
+
 button{
 background:#df001d;
 color:white;
 border:none;
 padding:10px 20px;
-font-size:16px;
-cursor:pointer;
 border-radius:6px;
+cursor:pointer;
+font-size:16px;
 transition:0.2s;
 }
 
@@ -97,7 +92,6 @@ button:hover{
 background:#a60016;
 }
 
-/* Footer */
 footer{
 margin-top:60px;
 text-align:center;
