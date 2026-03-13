@@ -1,0 +1,106 @@
+/* Reset */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+/* Body */
+body{
+background:#ffffff;
+font-family:'Yantramanav', sans-serif;
+color:#111;
+overflow-x:hidden;
+}
+
+/* Main container */
+.content{
+max-width:1200px;
+margin:auto;
+padding:20px;
+}
+
+/* Title */
+h1{
+font-size:42px;
+font-weight:900;
+color:#b297be;
+text-align:center;
+margin-top:40px;
+}
+
+/* Navigation */
+.nav{
+display:flex;
+justify-content:center;
+gap:40px;
+margin-top:20px;
+font-size:20px;
+}
+
+.nav a{
+text-decoration:none;
+color:#000;
+font-weight:700;
+transition:0.2s;
+}
+
+.nav a:hover{
+color:#a82b22;
+transform:scale(1.05);
+}
+
+/* Section text */
+p{
+line-height:1.6;
+font-size:18px;
+margin-top:10px;
+}
+
+/* Divider */
+hr{
+border:none;
+height:2px;
+background:#ddd;
+margin:40px 0;
+}
+
+/* Feature list */
+ul{
+margin-top:20px;
+padding-left:20px;
+}
+
+ul li{
+margin-bottom:10px;
+}
+
+/* Images */
+img{
+max-width:100%;
+height:auto;
+}
+
+/* Buttons */
+button{
+background:#df001d;
+color:white;
+border:none;
+padding:10px 20px;
+font-size:16px;
+cursor:pointer;
+border-radius:6px;
+transition:0.2s;
+}
+
+button:hover{
+background:#a60016;
+}
+
+/* Footer */
+footer{
+margin-top:60px;
+text-align:center;
+font-size:14px;
+opacity:0.7;
+}
