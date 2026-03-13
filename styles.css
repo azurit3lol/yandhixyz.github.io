@@ -7,102 +7,94 @@ box-sizing:border-box;
 body{
 background:#ffffff;
 font-family:'Yantramanav', sans-serif;
-color:#111;
 overflow-x:hidden;
 }
 
-.first{
-width:100%;
-display:flex;
-justify-content:center;
-}
-
-.content{
+.container{
 max-width:1200px;
-width:100%;
+margin:auto;
 padding:20px;
+text-align:center;
 }
 
-.hero-image{
+.hero{
 width:100%;
-max-width:700px;
+max-width:900px;
 height:auto;
 display:block;
 margin:40px auto;
 }
 
-h1{
-font-size:48px;
-font-weight:900;
-color:#b297be;
-text-align:center;
-margin-top:40px;
-}
-
-p{
-font-size:18px;
-line-height:1.6;
-}
-
-nav{
+.navbar{
 display:flex;
 justify-content:center;
-gap:40px;
-margin:30px 0;
-font-size:20px;
-font-weight:700;
-}
-
-nav a{
-color:#000;
-text-decoration:none;
-transition:0.2s;
-}
-
-nav a:hover{
-color:#a82b22;
-transform:scale(1.05);
-}
-
-ul{
+align-items:center;
+gap:10px;
 margin-top:20px;
-padding-left:20px;
+flex-wrap:wrap;
 }
 
-ul li{
-margin-bottom:10px;
+.nav-btn{
+width:120px;
+height:50px;
+background-image:url("https://files.strawcdn.com/straw/TSIVdGRJYHbTKFYiFXQG.png");
+background-size:contain;
+background-repeat:no-repeat;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:bold;
+text-decoration:none;
+color:black;
 }
 
-img{
-max-width:100%;
-height:auto;
+.nav-btn.active{
+background-image:url("https://files.strawcdn.com/straw/BVlqgCZFdsxtKGdkPqpp.png");
 }
 
-hr{
-border:none;
-height:2px;
-background:#ddd;
-margin:40px 0;
+.donate{
+position:fixed;
+right:30px;
+bottom:30px;
+width:140px;
+height:60px;
+background-image:url("https://files.strawcdn.com/straw/IWZFmfxLplPNnrbNUvOO.png");
+background-size:contain;
+background-repeat:no-repeat;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:bold;
+text-decoration:none;
+color:black;
 }
 
-button{
-background:#df001d;
-color:white;
-border:none;
-padding:10px 20px;
-border-radius:6px;
-cursor:pointer;
-font-size:16px;
-transition:0.2s;
+.description{
+margin-top:20px;
+font-size:18px;
+line-height:1.6;
+max-width:700px;
+margin-left:auto;
+margin-right:auto;
 }
 
-button:hover{
-background:#a60016;
+@media (max-width:768px){
+
+.hero{
+max-width:95%;
 }
 
-footer{
-margin-top:60px;
-text-align:center;
+.nav-btn{
+width:100px;
+height:45px;
 font-size:14px;
-opacity:0.7;
+}
+
+.donate{
+right:15px;
+bottom:15px;
+}
+
 }
