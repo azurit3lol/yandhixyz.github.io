@@ -1,52 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>yandhi.xyz</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@400;900&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>yandhi.xyz</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@400;900&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Yantramanav',sans-serif;
+background:#ffffff;
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+padding:40px 20px;
+}
+
+.container{
+max-width:900px;
+width:100%;
+}
+
+/* Yandhi minidisc image might not be scaled properly. If it isn't report usig contact. */
+
+.hero{
+width:100%;
+max-width:650px;
+margin:40px auto;
+display:block;
+}
+
+.title{
+font-size:40px;
+font-weight:900;
+color:#b297be;
+margin-bottom:10px;
+}
+
+.description{
+font-size:18px;
+margin-bottom:40px;
+}
+
+.navbar{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:14px;
+margin-bottom:40px;
+}
+
+.nav-btn{
+width:130px;
+height:55px;
+background-image:url("https://files.strawcdn.com/straw/TSIVdGRJYHbTKFYiFXQG.png");
+background-size:contain;
+background-repeat:no-repeat;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:bold;
+text-decoration:none;
+color:black;
+}
+
+.nav-btn.active{
+background-image:url("https://files.strawcdn.com/straw/BVlqgCZFdsxtKGdkPqpp.png");
+}
+
+.donate{
+position:fixed;
+right:20px;
+bottom:20px;
+width:160px;
+height:65px;
+background-image:url("https://files.strawcdn.com/straw/IWZFmfxLplPNnrbNUvOO.png");
+background-size:contain;
+background-repeat:no-repeat;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:bold;
+text-decoration:none;
+color:black;
+}
+
+.section{
+margin-top:40px;
+font-size:18px;
+line-height:1.6;
+}
+
+ul{
+margin-top:15px;
+text-align:left;
+display:inline-block;
+}
+
+li{
+margin-bottom:10px;
+}
+
+@media (max-width:700px){
+
+.hero{
+max-width:95%;
+}
+
+.nav-btn{
+width:110px;
+height:50px;
+font-size:14px;
+}
+
+.donate{
+width:140px;
+height:60px;
+}
+
+}
+
+</style>
+
 </head>
+
 <body>
 
-    <div class="content-wrapper">
-        
-        <img src="https://files.strawcdn.com/straw/sCrFzFZpvoCJybMckdAT.png" class="hero-cd" alt="Yandhi Disc">
-        
-        <h1 class="title">yandhi.xyz</h1>
-        <p class="subtitle">A platform for audio uploads! Explore hundreds of blogs uploaded by our community.</p>
+<div class="container">
 
-        <nav class="nav-container">
-            <a href="#" class="btn-box active">Home</a>
-            <a href="#" class="btn-box">Files</a>
-            <a href="#" class="btn-box">Upload</a>
-            <a href="#" class="btn-box">FAQ</a>
-            <a href="#" class="btn-box">Rules</a>
-            <a href="#" class="btn-box">Contact</a>
-        </nav>
+<img class="hero" src="https://files.strawcdn.com/straw/sCrFzFZpvoCJybMckdAT.png">
 
-        <div class="info-text">
-            <p class="scale-1-5">yandhi.xyz is a fast and reliable audio service about community support.</p>
-            
-            <p class="scale-1-2">
-                Leaked audios uploaded <span class="red-bold">must</span> qualify as 
-                <a href="https://en.wikipedia.org/wiki/Fair_use" target="_blank" class="pink-link">Fairuse</a>.
-            </p>
+<h1 class="title">yandhi.xyz</h1>
 
-            <ul class="features-list scale-1-15">
-                <li>Safe downloads - Every upload is checked for potential danger.</li>
-                <li>Multiple concurrent downloads - No limits.</li>
-                <li>No advertisements - No ads anywhere on yandhi.xyz.</li>
-                <li>No paywalls - No charge for access.</li>
-                <li>No account required - No registration needed.</li>
-            </ul>
+<p class="description">
+A platform for audio downloads! Explore hundreds of files uploaded by our community.
+</p>
 
-            <p class="unfinished-tag scale-1-5">SITE IS UNFINISHED!!!!</p>
-        </div>
+<div class="navbar">
 
-    </div>
+<a href="./" class="nav-btn active">Home</a>
+<a href="./files" class="nav-btn">Files</a>
+<a href="./upload" class="nav-btn">Upload</a>
+<a href="./faq" class="nav-btn">FAQ</a>
+<a href="./rules" class="nav-btn">Rules</a>
+<a href="./contact" class="nav-btn">Contact</a>
 
-    <a href="#" class="donate-btn">Donate</a>
+</div>
+
+<div class="section">
+
+<p>
+yandhi.xyz is a fast and reliable audio service about audios, sound effects or anything related to audio.
+</p>
+
+<br>
+
+<p><strong>Leaked audios uploaded must qualify as Fair Use.</strong></p>
+
+<br>
+
+<p>We offer the following features:</p>
+
+<ul>
+
+<li>Safe downloads — every upload is checked for potential danger.</li>
+<li>Multiple concurrent downloads.</li>
+<li>No wait time between downloads.</li>
+<li>No advertisements anywhere.</li>
+<li>No paywalls.</li>
+<li>No account required for downloads.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<a href="./donate" class="donate">Donate</a>
 
 </body>
 </html>
