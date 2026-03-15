@@ -112,7 +112,7 @@ height:55px;
 #list{
 width:100%;
 border-collapse:collapse;
-background:#f7f7f7;
+background:#fcfcfb;
 margin-top:20px;
 font-family:'Yantramanav',sans-serif;
 }
@@ -120,7 +120,7 @@ font-family:'Yantramanav',sans-serif;
 #list th{
 text-align:left;
 padding:10px;
-background:#e6e6e6;
+background:#e7d6d7;
 }
 
 #list td{
@@ -129,7 +129,7 @@ border-bottom:1px solid #ddd;
 }
 
 #list tr:hover{
-background:#efefef;
+background:#606269;
 }
 
 }
