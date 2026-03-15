@@ -109,4 +109,26 @@ width:130px;
 height:55px;
 }
 
+#list{
+width:100%;
+border-collapse:collapse;
+background:#f7f7f7;
+margin-top:20px;
+}
+
+#list th{
+text-align:left;
+padding:10px;
+background:#e6e6e6;
+}
+
+#list td{
+padding:10px;
+border-bottom:1px solid #ddd;
+}
+
+#list tr:hover{
+background:#efefef;
+}
+
 }
