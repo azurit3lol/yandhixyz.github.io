@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Thing",
+    "size": "4.8 MB",
+    "date": "00-Jan-1900"
+  },
+  {
+    "name": "Something",
+    "size": "128 MB",
+    "date": "00-Jan-1900"
+  },
+  {
+    "name": "Another%20Thing/",
+    "size": "-",
+    "date": "00-Jan-1900"
+  }
+]
