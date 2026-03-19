@@ -81,11 +81,8 @@ background-image:url("https://files.strawcdn.com/straw/BVlqgCZFdsxtKGdkPqpp.png"
 }
 
 .donate{
-position:fixed;
-right:20px;
-bottom:20px;
-width:160px;
-height:65px;
+width:130px;
+height:55px;
 background-image:url("https://files.strawcdn.com/straw/IWZFmfxLplPNnrbNUvOO.png");
 background-size:contain;
 background-repeat:no-repeat;
@@ -100,41 +97,20 @@ color:black;
 
 .section{
 margin-top:40px;
-width:100%;
+font-size:18px;
+line-height:1.6;
 }
 
-#list{
-width:100%;
-border-collapse:collapse;
-background:#f7f7f7;
-margin-top:20px;
-}
-
-#list th{
+ul{
+margin-top:15px;
 text-align:left;
-padding:10px;
-background:#e6e6e6;
+display:inline-block;
 }
 
-#list td{
-padding:10px;
-border-bottom:1px solid #ddd;
+li{
+margin-bottom:10px;
 }
 
-#list tr:hover{
-background:#efefef;
-}
-
-a{
-color:#0366d6;
-text-decoration:none;
-}
-
-a:hover{
-text-decoration:underline;
-}
-
-/* MOBILE */
 @media (max-width:700px){
 
 .hero{
@@ -167,19 +143,21 @@ height:60px;
 <h1 class="title">yandhi.xyz</h1>
 
 <p class="description">
-Browse all uploaded files from the community.
+A platform for audio downloads! Explore hundreds of files uploaded by our community.
 </p>
 
 <div class="navbar">
-<a href="../" class="nav-btn">Home</a>
-<a href="./" class="nav-btn active">Files</a>
-<a href="../upload" class="nav-btn">Upload</a>
-<a href="../faq" class="nav-btn">FAQ</a>
-<a href="../rules" class="nav-btn">Rules</a>
-<a href="../contact" class="nav-btn">Contact</a>
-</div>
 
-<div class="section">
+<a href="./" class="nav-btn active">Home</a>
+<a href="./files" class="nav-btn">Files</a>
+<a href="./upload" class="nav-btn">Upload</a>
+<a href="./faq" class="nav-btn">FAQ</a>
+<a href="./rules" class="nav-btn">Rules</a>
+
+<a href="./donate" class="donate">Donate</a>
+<a href="./contact" class="nav-btn">Contact</a>
+
+</div>
 
 <h2>Index of files</h2>
 
