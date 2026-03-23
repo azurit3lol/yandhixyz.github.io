@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Upload - yandhi.xyz</title>
+
+<link rel="icon" href="../favicon.ico">
+<link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@400;900&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Yantramanav',sans-serif;
+background:#ffffff;
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+padding:40px 20px;
+}
+
+.container{
+max-width:900px;
+width:100%;
+}
+
+.title{
+font-size:60px;
+font-weight:900;
+color:#b297be;
+margin-bottom:10px;
+}
+
+.description{
+font-size:18px;
+margin-bottom:40px;
+}
+
+.navbar{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:14px;
+margin-bottom:40px;
+}
+
+.nav-btn{
+width:130px;
+height:55px;
+background-image:url("https://files.strawcdn.com/straw/TSIVdGRJYHbTKFYiFXQG.png");
+background-size:contain;
+background-repeat:no-repeat;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:bold;
+text-decoration:none;
+color:black;
+}
+
+.nav-btn.active{
+background-image:url("https://files.strawcdn.com/straw/BVlqgCZFdsxtKGdkPqpp.png");
+}
+
+.donate{
+width:130px;
+height:55px;
+background-image:url("https://files.strawcdn.com/straw/IWZFmfxLplPNnrbNUvOO.png");
+background-size:contain;
+background-repeat:no-repeat;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:bold;
+text-decoration:none;
+color:black;
+}
+
+/* Upload box */
+.upload-box{
+background:#f4f4f4;
+padding:30px;
+border-radius:10px;
+max-width:500px;
+margin:0 auto;
+text-align:left;
+}
+
+.upload-box label{
+display:block;
+margin-top:15px;
+font-weight:bold;
+}
+
+.upload-box input,
+.upload-box textarea{
+width:100%;
+padding:10px;
+margin-top:5px;
+border:1px solid #ccc;
+border-radius:5px;
+font-family:'Yantramanav',sans-serif;
+}
+
+.upload-box button{
+margin-top:20px;
+width:100%;
+padding:12px;
+border:none;
+background:#b297be;
+color:white;
+font-weight:bold;
+cursor:pointer;
+border-radius:5px;
+}
+
+.upload-box button:hover{
+opacity:0.9;
+}
+
+.note{
+margin-top:20px;
+font-size:14px;
+color:#666;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1 class="title">Upload</h1>
+
+<p class="description">
+Upload your audio files to share with the community.
+</p>
+
+<div class="navbar">
+<a href="../" class="nav-btn">Home</a>
+<a href="../files" class="nav-btn">Files</a>
+<a href="../upload" class="nav-btn active">Upload</a>
+<a href="../faq" class="nav-btn">FAQ</a>
+<a href="../rules" class="nav-btn">Rules</a>
+<a href="../donate" class="donate">Donate</a>
+<a href="../contact" class="nav-btn">Contact</a>
+</div>
+
+<div class="upload-box">
+
+<label>File</label>
+<input type="file">
+
+<label>Title</label>
+<input type="text" placeholder="Enter file name">
+
+<label>Comment (optional)</label>
+<textarea rows="3" placeholder="Leave a note about this file"></textarea>
+
+<button onclick="fakeUpload()">Upload</button>
+
+<div class="note">
+Note: Uploading is currently unavailable. This is a demo page.
+</div>
+
+</div>
+
+</div>
+
+<script>
+function fakeUpload(){
+alert("Upload feature coming soon!");
+}
+</script>
+
+</body>
+</html>
