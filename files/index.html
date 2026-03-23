@@ -182,8 +182,7 @@ A platform for audio downloads! Explore hundreds of files uploaded by our commun
 <a href="../donate" class="donate">Donate</a>
 
 <script>
-
-  fetch("filelist.json")
+fetch("filelist.json")
 .then(res => res.json())
 .then(files => {
 
@@ -193,12 +192,29 @@ files.forEach(file => {
 
 let row = document.createElement("tr");
 
-row.innerHTML = `
-<td><a href="${file.name}">${file.name}</a></td>
-<td>${file.size}</td>
-<td>${file.date}</td>
-<td>${file.comment || ""}</td>
-`;
+// NAME
+let nameCell = document.createElement("td");
+let link = document.createElement("a");
+link.href = file.name;
+link.textContent = file.name;
+nameCell.appendChild(link);
+
+// SIZE
+let sizeCell = document.createElement("td");
+sizeCell.textContent = file.size;
+
+// DATE
+let dateCell = document.createElement("td");
+dateCell.textContent = file.date;
+
+// COMMENT
+let commentCell = document.createElement("td");
+commentCell.textContent = file.comment || "";
+
+row.appendChild(nameCell);
+row.appendChild(sizeCell);
+row.appendChild(dateCell);
+row.appendChild(commentCell);
 
 table.appendChild(row);
 
