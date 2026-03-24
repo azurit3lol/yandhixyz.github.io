@@ -2,19 +2,19 @@
   {
     "name": "Thing.mp3",
     "size": "4.8 MB",
-    "date": "00-Jan-1900"
-    "comment":"Placeholder 1"
+    "date": "00-Jan-1900",
+    "comment": "Placeholder 1"
   },
   {
     "name": "Something.zip",
     "size": "128 MB",
-    "date": "00-Jan-1900"
-    "comment":"Placeholder 2"
+    "date": "00-Jan-1900",
+    "comment": "Placeholder 2"
   },
   {
-    "name": "Another%20Thing/",
+    "name": "Another Thing/",
     "size": "-",
-    "date": "00-Jan-1900"
-    "comment":"Placeholder 3"
+    "date": "00-Jan-1900",
+    "comment": "Placeholder 3"
   }
 ]
