@@ -153,7 +153,7 @@ A platform for audio downloads! Explore hundreds of files uploaded by our commun
 <a href="../upload" class="nav-btn">Upload</a>
 <a href="../faq" class="nav-btn">FAQ</a>
 <a href="../rules" class="nav-btn">Rules</a>
-<a href="../donate" class="nav-btn">Donate</a>
+<a href="../donate" class="donate">Donate</a>
 <a href="../contact" class="nav-btn">Contact</a>
 
 </div>
@@ -176,8 +176,6 @@ A platform for audio downloads! Explore hundreds of files uploaded by our commun
 
 </div>
 
-<a href="../donate" class="donate">Donate</a>
-
 <script>
 fetch("filelist.json")
 .then(res => res.json())
@@ -189,22 +187,18 @@ files.forEach(file => {
 
 let row = document.createElement("tr");
 
-// NAME
 let nameCell = document.createElement("td");
 let link = document.createElement("a");
 link.href = file.name;
 link.textContent = file.name;
 nameCell.appendChild(link);
 
-// SIZE
 let sizeCell = document.createElement("td");
 sizeCell.textContent = file.size;
 
-// DATE
 let dateCell = document.createElement("td");
 dateCell.textContent = file.date;
 
-// COMMENT
 let commentCell = document.createElement("td");
 commentCell.textContent = file.comment || "";
 
